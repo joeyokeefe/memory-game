@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px black solid;
+}
+
+body {
+  height: 100vh;
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+}
+
+#game {
+  width: 60rem;
+  height: 50rem;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  flex: 1 1 12.5rem;
+  margin: 1rem;
+}
