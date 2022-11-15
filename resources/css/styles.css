@@ -2,16 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px black solid;
 }
 
 body {
   height: 100vh;
-  background-color: beige;
+  background-color: lightsteelblue;
+  font-family: sans-serif;
 }
 
 h1 {
   text-align: center;
+  font-size: 6rem;
 }
 
 #game {
@@ -22,7 +23,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  perspective: 1000px;
+  perspective: 62.5rem;
 }
 
 .card {
@@ -33,6 +34,7 @@ h1 {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform 1s ease;
+  position: relative;
 }
 
 .card.flip {
@@ -46,4 +48,16 @@ h1 {
 
 .cardFront {
   transform: rotateY(180deg);
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 8rem;
+}
+
+.cardBack {
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
