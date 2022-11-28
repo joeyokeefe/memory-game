@@ -2,17 +2,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Alexandria", sans-serif;
 }
 
 body {
   height: 100vh;
-  background-color: lightsteelblue;
+  background-color: #edf7fa;
   font-family: sans-serif;
+  background-color: rgb(255, 234, 234);
 }
 
 h1 {
   text-align: center;
   font-size: 6rem;
+  color: #5f6caf;
+  white-space: nowrap;
 }
 
 #game {
@@ -35,6 +39,7 @@ h1 {
   transform-style: preserve-3d;
   transition: transform 1s ease;
   position: relative;
+  border-radius: 20px;
 }
 
 .card.flip {
@@ -44,20 +49,41 @@ h1 {
 .cardFront,
 .cardBack {
   backface-visibility: hidden;
+  border-radius: 20px;
 }
 
 .cardFront {
   transform: rotateY(180deg);
-  background-color: white;
+  background-color: #ff8364;
   height: 100%;
   width: 100%;
   position: absolute;
-  text-align: center;
   font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.cardFront img {
+  flex: 0 1 0;
 }
 
 .cardBack {
   height: 100%;
   width: 100%;
   position: absolute;
+  background-color: #5f6caf;
+  background-image: repeating-linear-gradient(
+    45deg,
+    white 1px,
+    transparent 15px
+  );
+  border: 6px solid #5f6caf;
+}
+
+#credit {
+  text-align: center;
+  margin-top: 5rem;
+  color: #5f6caf;
 }
