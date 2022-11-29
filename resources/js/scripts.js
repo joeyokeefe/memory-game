@@ -1,8 +1,9 @@
 const cards = document.querySelectorAll(".card");
+const startButton = document.getElementById("startButton");
 
 //initialize global variables
 let cardOne, cardTwo;
-let lock = false;
+let lock = true;
 let hasFlipped = false;
 
 function flipCard() {
@@ -66,3 +67,7 @@ const resetBoard = () => {
 
 //adds event listener for card flip on click
 cards.forEach((card) => card.addEventListener("click", flipCard));
+
+startButton.addEventListener("click", function () {
+  lock = false;
+});
