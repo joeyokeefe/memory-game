@@ -1,2 +1,2 @@
 # memory-game
-A web based memory game using JavaScript
+A web based memory game using vanilla JavaScript
